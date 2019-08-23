@@ -1,0 +1,110 @@
+#outer-div {
+	user-select: none;
+}
+
+button {
+	border: 0;
+	background-repeat: no-repeat;
+	background-position: 3px, 0px;
+	background-size: 70px 70px, 72px 72px;
+	height: 72px;
+	width: 72px;
+}
+.animate-up {
+	transition: transform 0.1s;
+	transform: scale(1.2);
+	z-index: 1;
+}
+
+.animate-down {
+	transform: scale(1);
+	transition: transform 0.1s;
+}
+
+#slots-container {
+	height: 539px;
+}
+
+#slots-container * {
+	z-index: 0;
+}
+
+#slots-background {
+	user-select: none;
+	pointer-events: none;
+	position: absolute;
+	margin-left: -200px;
+}
+
+.slot-button {
+	position: absolute;
+}
+.head-slot {
+	background: url('../images/Head_slot.png');
+	margin-left: -36px;
+	margin-top: 20px;
+}
+
+.cape-slot {
+	background: url('../images/Cape_slot.png');
+	margin-left: -117px;
+	margin-top: 97px;
+}
+
+.neck-slot {
+	background: url('../images/Neck_slot.png');
+	margin-left: -36px;
+	margin-top: 97px;
+}
+
+.ammo-slot {
+	background: url('../images/Ammo_slot.png');
+	margin-left: 45px;
+	margin-top: 97px;
+}
+
+.weapon-slot {
+	background: url('../images/Weapon_slot.png');
+	margin-left: -146px;
+	margin-top: 174px;
+}
+
+.body-slot {
+	background: url('../images/Body_slot.png');
+	margin-left: -36px;
+	margin-top: 174px;
+}
+
+.shield-slot {
+	background: url('../images/Shield_slot.png');
+	margin-left: 74px;
+	margin-top: 174px;
+}
+
+.legs-slot {
+	background: url('../images/Legs_slot.png');
+	margin-left: -36px;
+	margin-top: 252px;
+}
+
+.hands-slot {
+	background: url('../images/Hands_slot.png');
+	margin-left: -146px;
+	margin-top: 331px;
+}
+
+.feet-slot {
+	background: url('../images/Feet_slot.png');
+	margin-left: -36px;
+	margin-top: 331px;
+}
+
+.ring-slot {
+	background: url('../images/Ring_slot.png');
+	margin-left: 74px;
+	margin-top: 331px;
+}
+
+button:focus {
+	outline: none;
+}

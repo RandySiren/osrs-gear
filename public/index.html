@@ -1,0 +1,66 @@
+<!-- 
+    INDEX FILE
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./stylesheets/style.css" />
+		<link rel="stylesheet" href="./stylesheets/autocomplete.css" />
+		<link rel="stylesheet" href="./stylesheets/slots.css" />
+		<title>OSRS Gear</title>
+	</head>
+	<body>
+		<!-- MAIN CENTERED CONTAINER ALL ELEMENTS GO IN HERE -->
+		<div id="center-container" class="container">
+			<!-- 
+                MAIN HEADER TITLE
+            -->
+			<h1 id="title-header">OSRS Gear</h1>
+
+			<!--
+                SEARCH BAR
+            -->
+			<div class="autocomplete-form">
+				<div id="autocomplete" class="autocomplete">
+					<input id="autocomplete-input" type="text" name="autocomplete" placeholder="select a slot to search an item" />
+				</div>
+			</div>
+
+			<!--
+                GEAR STUFF
+            -->
+			<div id="outer-div">
+				<div id="slots-container">
+					<img id="slots-background" src="./images/EquipmentBackground.png" alt="background-image" />
+					<button class="slot-button animate-down head-slot"></button>
+					<button class="slot-button animate-down cape-slot"></button>
+					<button class="slot-button animate-down neck-slot"></button>
+					<button class="slot-button animate-down ammo-slot"></button>
+					<button class="slot-button animate-down weapon-slot"></button>
+					<button class="slot-button animate-down body-slot"></button>
+					<button class="slot-button animate-down shield-slot"></button>
+					<button class="slot-button animate-down legs-slot"></button>
+					<button class="slot-button animate-down hands-slot"></button>
+					<button class="slot-button animate-down feet-slot"></button>
+					<button class="slot-button animate-down ring-slot"></button>
+				</div>
+			</div>
+			<!-- GET URL BUTTON -->
+			<div id="get-url-container">
+				<input id="get-url-button" draggable="false" type="image" src="./images/GetURLButton.png" />
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<textarea id="url-p" disabled></textarea>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="./javascripts/main.js"></script>
+	</body>
+</html>

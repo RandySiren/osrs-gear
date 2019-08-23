@@ -1,0 +1,102 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+.autocomplete {
+	width: 850px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+.match {
+	font-weight: 900;
+}
+
+#autocomplete-input {
+	box-sizing: border-box;
+	width: inherit;
+	height: 70px;
+	background: url('../images/SearchBackground.png');
+	border: 10px solid transparent;
+	border-image: url('../images/SearchBorder.png') 11 11 11 11 stretch;
+	padding: 0px 10px 0px;
+	font-family: 'RuneScape-UF';
+	font-size: 30px;
+	color: blue;
+}
+
+.autocomplete-items {
+	box-sizing: border-box;
+	position: absolute;
+	background: url('../images/SearchBackground.png');
+	border: 7px solid transparent;
+	border-image: url('../images/SearchBorder.png') 11 11 11 11 stretch;
+	height: 304px;
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	font-family: 'RuneScape-UF';
+	font-size: 25px;
+	color: black;
+	z-index: 99;
+}
+.autocomplete-item {
+	display: flex;
+	padding: 5px;
+}
+.autocomplete-item:hover {
+	color: blue;
+}
+.autocomplete-active {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.autocomplete-items::-webkit-scrollbar-thumb {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url('../images/ScrollbarThumb.png');
+}
+.autocomplete-items::-webkit-scrollbar {
+	width: 22px;
+}
+
+.autocomplete-items::-webkit-scrollbar-button:start {
+	background-image: url('../images/ScrollbarUp.png');
+	height: 23px;
+}
+.autocomplete-items::-webkit-scrollbar-button:end {
+	background-image: url('../images/ScrollbarDown.png');
+	height: 23px;
+}
+.autocomplete-items::-webkit-scrollbar-track {
+	background: linear-gradient(90deg, rgba(37, 32, 25, 1) 0%, rgb(102, 90, 69) 100%);
+}
+
+@media (min-width: 400px) {
+	#autocomplete {
+		width: 400px;
+	}
+}
+@media (min-width: 650px) {
+	#autocomplete {
+		width: 500px;
+	}
+}
+@media (min-width: 800px) {
+	#autocomplete {
+		width: 650px;
+	}
+}
+@media (min-width: 1000px) {
+	#autocomplete {
+		width: 750px;
+	}
+}
+@media (min-width: 1200px) {
+	#autocomplete {
+		width: 850px;
+	}
+}
