@@ -14,6 +14,7 @@ router.get('/:id', async (req, res) => {
 	let id = req.params.id;
 	await Gear.find({ id: id }, (err, docs) => {
 		if (docs.length) {
+			console.log(docs);
 			res.send(docs[0]);
 		}
 	});
@@ -34,7 +35,7 @@ router.post('/', async (req, res, next) => {
 		legsSlot: reqBody.legsSlot,
 		handsSlot: reqBody.handsSlot,
 		feetSlot: reqBody.feetSlot,
-		ringSlot: reqBody.ringSlot
+		ringSlot: reqBody.ringSlot,
 	});
 	await newGear.save();
 	res.send(newGear.id);

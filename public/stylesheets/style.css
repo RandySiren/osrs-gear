@@ -13,7 +13,9 @@ textarea:focus,
 button:focus {
 	outline: none;
 }
+html,
 body {
+	height: 100%;
 	margin: 0;
 	background-image: url('../images/Background.png');
 	background-size: cover;
@@ -23,7 +25,7 @@ body {
 
 #center-container {
 	margin: 0 auto;
-	height: 100vh;
+	height: 100%;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 }
